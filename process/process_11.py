@@ -3,7 +3,7 @@ import time
 from multiprocessing import Process, Queue
 
 
-# producer<-->queue<-->customer
+# producer<-->queue_<-->customer
 
 def producer(name, q):
     # print(f'{name} start to produce sth')

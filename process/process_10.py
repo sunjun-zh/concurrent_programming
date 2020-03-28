@@ -9,7 +9,7 @@ def task(name, i, q):
     time.sleep(1)
     q.put(i)  # process will block if q is full and q still pull sth
     if q.full():
-        print('queue if full')
+        print('queue_ if full')
     print(f'{name} is done')
 
 

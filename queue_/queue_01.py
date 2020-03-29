@@ -2,7 +2,7 @@
 import time
 import queue
 
-q = queue.Queue(3) # first in first out
+q = queue.Queue(3) # first in first out; contain a lock
 
 def task():
     q.put('a')
@@ -19,5 +19,8 @@ def task():
 if __name__ == '__main__':
     task()
 
+    # _sentinel1 = object()
+    # _sentinel2 = object()
+    # print(_sentinel1 == _sentinel2)
 
 
